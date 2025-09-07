@@ -14,3 +14,10 @@ Comenzi utile: `list` (arată animalele disponibile), `exit` (închide aplicați
 - **Creator abstract:** `AnimalCreator` (proprietate `Type`, metodă abstractă `Create()`)
 - **Creatori concreți:** `DogCreator`, `CatCreator`, `CowCreator`, `DuckCreator`
 - **Beneficiu:** decizia de creare este delegată subclaselor; codul de selecție în `Program` rămâne curat.
+
+##  Unit tests
+
+Proiectul include **2 teste** care dovedesc cele 2 design patterns:
+
+1. **Strategy** – verifică faptul că `Dog` are comportamentul corect (`Type="Dog"`, `Sound="woof"`).
+2. **Factory Method** – verifică faptul că `CatCreator.Create()` întoarce un `Cat` cu `Sound="meow"`.
